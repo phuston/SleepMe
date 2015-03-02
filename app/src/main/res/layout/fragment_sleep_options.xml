@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.phuston.android.sleepme.SleepOptionsFragment"
+             android:background="@color/primary">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/options_header"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:background="@color/accent"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_margin="@dimen/abc_text_size_title_material"
+            android:gravity="center_vertical|center_horizontal"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep_now"
+            android:id="@+id/sleep_now_button"
+            style="@style/Base.TextAppearance.AppCompat.Button"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ripple"
+            android:layout_margin="@dimen/abc_text_size_button_material"
+            android:elevation="5dp"
+            android:translationZ="@dimen/abc_text_size_button_material"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/know_bedtime"
+            android:id="@+id/know_bedtime_button"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ripple"
+            android:layout_margin="@dimen/abc_text_size_button_material"
+            android:elevation="5dp"
+            android:translationZ="@dimen/abc_text_size_button_material"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/know_waketime"
+            android:id="@+id/know_waketime_button"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ripple"
+            android:layout_margin="@dimen/abc_text_size_button_material"
+            android:elevation="50dp"
+            android:translationZ="@dimen/abc_text_size_button_material"/>
+    </LinearLayout>
+
+</LinearLayout>

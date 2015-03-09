@@ -34,7 +34,8 @@
             android:background="@drawable/ripple"
             android:layout_margin="@dimen/abc_text_size_button_material"
             android:elevation="5dp"
-            android:translationZ="@dimen/abc_text_size_button_material"/>
+            android:translationZ="@dimen/abc_text_size_button_material"
+            android:textColor="@color/primarytext"/>
 
         <Button
             android:layout_width="match_parent"
@@ -46,7 +47,8 @@
             android:background="@drawable/ripple"
             android:layout_margin="@dimen/abc_text_size_button_material"
             android:elevation="5dp"
-            android:translationZ="@dimen/abc_text_size_button_material"/>
+            android:translationZ="@dimen/abc_text_size_button_material"
+            android:textColor="@color/primarytext"/>
 
         <Button
             android:layout_width="match_parent"
@@ -58,7 +60,8 @@
             android:background="@drawable/ripple"
             android:layout_margin="@dimen/abc_text_size_button_material"
             android:elevation="50dp"
-            android:translationZ="@dimen/abc_text_size_button_material"/>
+            android:translationZ="@dimen/abc_text_size_button_material"
+            android:textColor="@color/primarytext"/>
     </LinearLayout>
 
 </LinearLayout>

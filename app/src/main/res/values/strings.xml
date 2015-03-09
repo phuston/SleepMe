@@ -2,9 +2,14 @@
     <string name="app_name">SleepMe</string>
     <string name="action_settings">Settings</string>
 
-    <string name="options_title">YO here are your options.</string>
-    <string name="options_header">Choose your option.</string>
+    <string name="options_title">Here are your options.</string>
+    <string name="options_header">Select the applicable option.</string>
     <string name="sleep_now">I want to sleep now.</string>
     <string name="know_bedtime">I know my bedtime.</string>
     <string name="know_waketime">I know my wakeup time.</string>
+    <string name="title_activity_time_list">Time List</string>
+    <string name="time_list_title">Time List</string>
+    <string name="time_list_header">You should aim to wake up at:</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>

@@ -20,6 +20,10 @@
             android:name=".TimeListActivity"
             android:label="@string/title_activity_time_list" >
         </activity>
+        <activity
+            android:name=".TimeSelectActivity"
+            android:label="@string/title_activity_time_select" >
+        </activity>
     </application>
 
 </manifest>

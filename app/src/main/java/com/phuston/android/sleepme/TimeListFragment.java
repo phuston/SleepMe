@@ -12,6 +12,7 @@ import android.view.ViewGroup;
  */
 public class TimeListFragment extends Fragment {
     public static final String EXTRA_SLEEP_TYPE = "com.phuston.android.sleepme.sleep_type";
+    public static final String EXTRA_INIT_TIME = "com.phuston.android.sleepme.init_time";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

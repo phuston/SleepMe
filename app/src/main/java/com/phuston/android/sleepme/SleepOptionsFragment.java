@@ -40,8 +40,7 @@ public class SleepOptionsFragment extends Fragment {
         mBedtimeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: Edit this intent to route to a time selector
-                Intent i = new Intent(getActivity(), TimeListActivity.class);
+                Intent i = new Intent(getActivity(), TimeSelectActivity.class);
                 i.putExtra(TimeListFragment.EXTRA_SLEEP_TYPE, 1);
                 startActivity(i);
             }
@@ -51,8 +50,7 @@ public class SleepOptionsFragment extends Fragment {
         mWakeupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: Edit this intent to route to a time selector
-                Intent i = new Intent(getActivity(), TimeListActivity.class);
+                Intent i = new Intent(getActivity(), TimeSelectActivity.class);
                 i.putExtra(TimeListFragment.EXTRA_SLEEP_TYPE, 2);
                 startActivity(i);
             }

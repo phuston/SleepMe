@@ -9,12 +9,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import java.util.Calendar;
+
 
 public class SleepOptionsFragment extends Fragment {
     private static final String TAG = "SleepOptionsFragment";
     private Button mSleepNowButton;
     private Button mBedtimeButton;
     private Button mWakeupButton;
+    private Calendar mCurrentTime;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,8 +33,10 @@ public class SleepOptionsFragment extends Fragment {
         mSleepNowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mCurrentTime = Calendar.getInstance();
                 Intent i = new Intent(getActivity(), TimeListActivity.class);
                 i.putExtra(TimeListFragment.EXTRA_SLEEP_TYPE, 0);
+                i.putExtra(TimeListFragment.EXTRA_INIT_TIME, mCurrentTime);
                 startActivity(i);
             }
         });

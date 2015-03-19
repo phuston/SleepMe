@@ -17,12 +17,15 @@ public class TimeSelectFragment extends Fragment implements TimePicker.OnTimeCha
     private static final String TAG = "TimeSelectFragment";
     private Button mContinueButton;
     private Calendar mTime = Calendar.getInstance();
+    private int mType;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActivity().setTitle(R.string.options_title);
+
+        mType = (int)getActivity().getIntent().getSerializableExtra(TimeListFragment.EXTRA_SLEEP_TYPE);
     }
 
     @Override
@@ -37,7 +40,8 @@ public class TimeSelectFragment extends Fragment implements TimePicker.OnTimeCha
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), TimeListActivity.class);
-                i.putExtra(TimeListFragment.EXTRA_SLEEP_TYPE, 2);
+                i.putExtra(TimeListFragment.EXTRA_SLEEP_TYPE, mType);
+                i.putExtra(TimeListFragment.EXTRA_INIT_TIME, mTime);
                 startActivity(i);
             }
         });

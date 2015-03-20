@@ -6,15 +6,15 @@ import java.util.Calendar;
 /**
  * Created by phuston on 3/14/15.
  */
-public class WakeList {
+public class SleepList {
     private Calendar mInitTime = Calendar.getInstance();
 
-    public ArrayList<Calendar> mTimeList;
+    public ArrayList<Calendar> mSleepList;
 
 
-    public WakeList(Calendar initTime){
+    public SleepList(Calendar initTime){
         mInitTime = initTime;
-        mInitTime.add(Calendar.MINUTE, 14);
+        mInitTime.add(Calendar.MINUTE, -14);
     }
 
     public ArrayList<Calendar> getTimes(){
@@ -23,11 +23,10 @@ public class WakeList {
         times.add(mInitTime);
 
         for(int i = 0; i < 10; i++){
-            mInitTime.add(Calendar.HOUR, 1);
-            mInitTime.add(Calendar.MINUTE, 30);
+            mInitTime.add(Calendar.HOUR, -1);
+            mInitTime.add(Calendar.MINUTE, -30);
             times.add(mInitTime);
         }
-
 
         return times;
     }

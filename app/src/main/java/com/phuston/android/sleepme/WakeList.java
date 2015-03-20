@@ -19,13 +19,14 @@ public class WakeList {
 
     public ArrayList<Calendar> getTimes(){
 
-        ArrayList<Calendar> times = new ArrayList<Calendar>();
+        ArrayList<Calendar> times = new ArrayList<>();
         times.add(mInitTime);
 
-        for(int i = 0; i < 10; i++){
-            mInitTime.add(Calendar.HOUR, 1);
-            mInitTime.add(Calendar.MINUTE, 30);
-            times.add(mInitTime);
+        for(int i = 1; i < 8; i++){
+            Calendar newTime = mInitTime;
+            newTime.add(Calendar.HOUR, i);
+            newTime.add(Calendar.MINUTE, i*30);
+            times.add(newTime);
         }
 
 

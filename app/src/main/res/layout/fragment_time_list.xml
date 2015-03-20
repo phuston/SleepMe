@@ -25,6 +25,12 @@
             android:gravity="center_vertical|center_horizontal"
             android:elevation="5dp"/>
 
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
     </LinearLayout>
 
 </LinearLayout>

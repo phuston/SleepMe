@@ -25,7 +25,8 @@ public class SleepList {
         for(int i = 0; i < 10; i++){
             mInitTime.add(Calendar.HOUR, -1);
             mInitTime.add(Calendar.MINUTE, -30);
-            times.add(mInitTime);
+            Calendar newTime = mInitTime;
+            times.add(newTime);
         }
 
         return times;
